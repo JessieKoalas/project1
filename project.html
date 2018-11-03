@@ -105,16 +105,15 @@ var myText = document.getElementById("helloText");
   <!--- Header -->
  
  <div id="header" class="header">
-     <div class="container">
-         <div class="row">
-             <div class="col-lg-6 col-md-6">
-                 <h1>Responsive Web Design</h1>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
-                 <button class="btn btn-lg btn-primary">Buy Now</button>
-                 <button class="btn btn-lg btn-success">View Detail</button>
+     <div class="slideshow-container">
+             <div class="myimages">
+                 <img src="http://s5.favim.com/orig/51/koala-ears-grass-animal-Favim.com-485062.jpg">
              </div>
-             <div class="col-lg-6 col-md-6">
-                 <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/Responsive-Web-Design.png">
+             <div class=myimages>
+                 <img src="https://blogs.sandiegozoo.org/wp-content/uploads/2011/02/T10_0225_0291.jpg"
+             </div>
+             <div class="myimages">
+                 <img src="https://www.wwf.org.au/Images/UserUploadedImages/416/img-koala-in-tree-1000px.jpg"
              </div>
          </div>
      </div>
@@ -328,7 +327,7 @@ var myText = document.getElementById("helloText");
     <div class="container">
         <h2> Get Involved</h2>
         <div class="row">
-            <div class="col-lg-4 col-md-4 wow flipInY">
+            <div class="col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.2s">
                 <div class="options">
                     <i class="fas fa-globe-americas" aria-hidden="true"></i> 
                     <h3> Explore</h3>
@@ -336,7 +335,7 @@ var myText = document.getElementById("helloText");
                     <button class="btn btn-success">Visit</button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 wow flipInY">
+            <div class="col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.6s">
                 <div class= "options">
                     <i class="fas fa-hands-helping" aria-hidden="true"></i>
                     <h3> Volunteer</h3>
@@ -344,9 +343,12 @@ var myText = document.getElementById("helloText");
                     <button class="btn btn-success">Sign Up</button>
                 </div>
             </div>
-            <div class="col-lg-4 clo-md-4 wow flipInY">
+            <div class="col-lg-4 clo-md-4 wow flipInY" data-wow-delay="2.0s">
                 <div class="options">
-                    
+                    <i class= " fas-hand-holding-usd" aria-hidden="true"></i>
+                    <h3>Give</h3>
+                    <p> who else would it be</p>
+                    <button class="btn btn-success">Donate</button>
                 </div>
             </div>
         </div>
@@ -451,5 +453,7 @@ var myText = document.getElementById("helloText");
   </script>
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Javascript -->
+<script type="text/javascript" src="javascript.js"></script>
  </body>
 </html> 
