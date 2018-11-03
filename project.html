@@ -1,9 +1,66 @@
 <!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+ <head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style type="text/css">
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	background-color: #E3F0FB;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+.buttonStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	padding: 5px;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 75px;
+}
+ .buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+ </style>
+</head>
+ <body>
+<div id="mainContent">
+<p id="helloText">?</p>
+<button id="clickButton" class="buttonStyle">click me</button>
+</div>
+<script> 
+var myButton = document.getElementById("clickButton");
+var myText = document.getElementById("helloText");
+ myButton.addEventListener('click', doSomething, false)
+ function doSomething() {
+	myText.textContent = "hello, world!";
+}
+</script>
+ </body>
+</html>
+  
+392  project.html
+@@ -0,0 +1,392 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title> Bootstrap Template</title>
-
-  <!-- Bootstrap -->
+   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!--  Font Awesome -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,13 +71,10 @@
   <!-- Animate CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
-
-<body>
-
-   
+ <body>
+    
 <!--NAVIGATION-->
-
-<div id="myNavbar" class="navbar navbar-fixed-top navbar-inverse">
+ <div id="myNavbar" class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,9 +97,7 @@
         </div>
     </div>
 </div>
-
-
-  
+   
   <!--- Header -->
  
  <div id="header" class="header">
@@ -100,8 +152,7 @@
 <!--- End Services -->
    
 <!--- Pricing -->
-
-<div id="pricing" class="pricing">
+ <div id="pricing" class="pricing">
     <div class="container">
         <div class="row">
             <h2>Pricing</h2>
@@ -183,8 +234,7 @@
 </div>
  
  <!--- End Pricing ---->
-
-<!--- Team ---->
+ <!--- Team ---->
  
  
 <div id="team" class="team">
@@ -192,8 +242,7 @@
         <div class="row">
             <h2>Meet our team</h2>
             <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
-
-            <div class="col-lg-3 col-md-3">
+             <div class="col-lg-3 col-md-3">
                 <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/team/team-1.jpg" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <strong>CEO and Founder</strong>
@@ -203,8 +252,7 @@
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
-
-            <div class="col-lg-3 col-md-3">
+             <div class="col-lg-3 col-md-3">
                 <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/team/team-1.jpg" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <strong>CEO and Founder</strong>
@@ -214,8 +262,7 @@
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
-
-            <div class="col-lg-3 col-md-3">
+             <div class="col-lg-3 col-md-3">
                 <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/team/team-1.jpg" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <strong>CEO and Founder</strong>
@@ -225,8 +272,7 @@
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
-
-            <div class="col-lg-3 col-md-3">
+             <div class="col-lg-3 col-md-3">
                 <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/team/team-1.jpg" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <strong>CEO and Founder</strong>
@@ -236,16 +282,14 @@
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
-
-        </div>
+         </div>
     </div>
 </div>
  
 <!--- End Team -->
    
 <!--- Clients -->
-
-<div id="client" class="clients">
+ <div id="client" class="clients">
     <div class="container">
         <div class="row">
             <h2>Trusted by</h2>
@@ -275,17 +319,13 @@
 </div>
  
 <!--- End Clients -->
-
-
-<!--- Contact -->
-
-<div id="contact" class="contact">
+ <!--- Contact -->
+ <div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <h2>Contact</h2>
             <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
-
-            <div class="col-lg-6 col-md-6">
+             <div class="col-lg-6 col-md-6">
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
                     <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
@@ -299,15 +339,13 @@
                     <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
                 </div>
             </div>
-
-            <div class="col-lg-6 col-md-6">
+             <div class="col-lg-6 col-md-6">
                 <div class="input-group">
                     <textarea cols="80" rows="6" class="form-control"></textarea>
                 </div>
                 <button class="btn btn-lg" >Submit Your Message</button>
             </div>
-
-        </div>
+         </div>
     </div>
 </div>
  
@@ -320,16 +358,14 @@
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$25</button>
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$50</button>
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$100</button>
-
-             </div>
+              </div>
          </div>
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6">
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$250</button>
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$500</button>
                  <button class="btn btn-outline-primary btn-lg" aria-pressed="true">$1000</button>
-
-             </div>
+              </div>
           </div>
          
          <div class="row justify-content-center">
@@ -342,9 +378,7 @@
          </div>
      </div>
  </div>
-
-
- <div id="footer" class="footer">
+  <div id="footer" class="footer">
      <div class="container">
          <div class="row">
              <div class="col-lg-4 col-md-4">
@@ -373,9 +407,7 @@
          </div>
      </div>
  </div>
-
-
-<script
+ <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
@@ -386,7 +418,5 @@
   </script>
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-</body>
-</html>
+ </body>
+</html> 
