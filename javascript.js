@@ -10,13 +10,18 @@ function showSlides(){
         slides[i].style.display = "none";
     }
     slideIndex++;
-    If (slideIndex >= slides.length){
+    if (slideIndex >= slides.length){
         slideIndex = 0;
     }
     slides[slideIndex].style.display = "block";
     setTimeout(showSlides, 4000);
+    
 }
 
 //1st loop: i=0, slides [0] =img1
 //2nd loop: i=1, slides [1] =img2
 //3rd loop: i=2, slides [2] =img3
+
+function showSlides(){
+    console.log('Hello', slideIndex)
+}
